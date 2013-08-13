@@ -1,4 +1,4 @@
-# Misty
+# Misty v1
 ## A new minimalistic theme for Dropplets
 
 ### About
