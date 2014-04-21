@@ -19,17 +19,18 @@
         
 
             <header>
-                <h1><a href="/"><?php echo($blog_title); ?></a></h1>
-		<?php if($is_home) { ?>
-		<p><?php echo($intro_text); ?></p>
-		<p><a href="#">@<?php echo($blog_twitter); ?></a> <a href="#"><?php echo($blog_email); ?></a></p>
-		<?php } ?>
-
+                <h1><a href="<?php echo($blog_url); ?>"><?php echo($blog_title); ?></a></h1>
             </header>
                 
         <?php echo($content); ?>
+
+        <footer> 
+          <a href="http://twitter.com/<?php echo($blog_twitter); ?>"><img src="<?php echo get_twitter_profile_img($blog_twitter); ?>" alt="profile" /></a>
+            Copyright &copy; 2014 <?php echo($blog_title); ?>
+
+            <?php get_footer(); ?>
+        </footer>
         
-        <?php get_footer(); ?>
         </div>
     </body>
 </html>
